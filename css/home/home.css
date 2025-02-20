@@ -1,0 +1,18 @@
+main {
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+
+    .ford-ranger-image{
+        text-align: center;
+        display: inline-block;
+        p a{
+            color: navy;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        p a:hover{
+            text-shadow: 0 0;
+        }
+    }
+}
