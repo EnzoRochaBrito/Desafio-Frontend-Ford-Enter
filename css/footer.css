@@ -1,6 +1,6 @@
 footer {
     background-color: #1b357e;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     padding: 10px;
     position: fixed;
@@ -46,5 +46,29 @@ footer {
     display: inline-block;
     img{
         -webkit-user-drag: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+        .social-media-footer {
+            p{
+                display: none;
+            }
+        }
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    footer .social-media-footer ul li img{
+        width: 25px;
+    }
+    footer .ford-logo-footer{
+        height: 10vw;
+    }
+    footer .ford-logo-footer img{
+        max-height: 100%;
     }
 }

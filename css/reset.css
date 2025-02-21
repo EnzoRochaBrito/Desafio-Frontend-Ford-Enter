@@ -46,3 +46,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* fonts */
+
+@media screen and (min-width: 1080px){
+	* {
+		font-size: 24px !important;
+	}
+}
+
+@media screen and (max-width: 700px){
+	*{
+		font-size: 16px !important;
+	}
+}
+
+@media screen and (max-width: 500px){
+	*{
+		font-size: 10px !important;
+	}
+}
