@@ -1,0 +1,65 @@
+header + main{
+    margin-top: 60px;
+}
+
+main .youtube-video{
+    width: 100vw;
+    height: fit-content;
+    background-color: #f6f6f6;
+    text-align: center;
+    iframe{
+        height: 55vh;
+        width: 100%;
+    }
+}
+
+main .cars-releasing{
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    height: fit-content;
+    .car{
+        background-color: wheat;
+        max-width: 400px;
+        min-width: 200px;
+        max-height: fit-content;
+        .car-image{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 184px;
+            img{
+                max-height: 100%;
+            }
+        }
+        box-shadow: 0 0 5px black;
+        .car-detail{
+            display: flex;
+            justify-content: space-between;
+            input[type="checkbox"]{
+                width: 1.5rem;
+                height: 1.5rem;
+                position: absolute;
+            }
+            background-color: yellow;
+            .to-read{
+                font-family: Poppins;
+                font-size: 20px;
+                background-color: orange;
+                display: inline-block;
+                max-width: 80%;
+                .car-text{
+                    background-color: rosybrown;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    header + main{
+        margin-top: 0;
+    }
+    main .youtube-video iframe{
+        height: 40vh;
+    }
+}

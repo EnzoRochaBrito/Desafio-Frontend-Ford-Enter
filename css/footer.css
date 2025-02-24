@@ -10,65 +10,66 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-
-.social-media-footer{
+.social-media-footer {
     width: fit-content;
     display: inline-block;
     vertical-align: middle;
-    p {
-        display: inline;
-        vertical-align:middle;
-        color: white;
-    }
-    ul {
-        vertical-align:middle;
-        display: inline;
-    }
-    ul li{
-        display: inline;
-        img{
-            width: 30px;
-            transition: width 0.2s, padding 0.2s;
-            -webkit-user-drag: none;
-        }
-    }
-    ul li:hover{
-        opacity: 0.5;
-        img {
-            width: 25px;
-            padding: 2.5px;
-        }
-    }
 }
-
-.ford-logo-footer{
+.social-media-footer p {
+    display: inline;
+    vertical-align: middle;
+    color: white;
+}
+.social-media-footer ul {
+    vertical-align: middle;
+    display: inline;
+}
+.social-media-footer ul li {
+    display: inline;
+}
+.social-media-footer ul li img {
+    width: 30px;
+    transition: width 0.2s, padding 0.2s;
+    -webkit-user-drag: none;
+}
+.social-media-footer ul li:hover {
+    opacity: 0.5;
+}
+.social-media-footer ul li:hover img {
+    width: 25px;
+    padding: 2.5px;
+}
+.ford-logo-footer {
     margin-right: 20px;
     display: inline-block;
-    img{
-        -webkit-user-drag: none;
-    }
+    transition: opacity 0.2s;
 }
-
+.ford-logo-footer img {
+    -webkit-user-drag: none;
+}
+.ford-logo-footer:hover {
+    opacity: 0.5;
+}
 @media screen and (max-width: 400px) {
-    footer{
-        .social-media-footer {
+    footer {
+        height: 5vh;
+       /* .social-media-footer {
             p{
                 display: none;
-            }
-        }
+           }
+       }
+        */
         justify-content: space-evenly;
-    }
+   }
 }
-
-@media screen and (max-width: 600px){
-
-    footer .social-media-footer ul li img{
+@media screen and (max-width: 600px) {
+    footer .social-media-footer ul li img {
         width: 25px;
-    }
-    footer .ford-logo-footer{
+   }
+    footer .ford-logo-footer {
         height: 10vw;
-    }
-    footer .ford-logo-footer img{
+   }
+    footer .ford-logo-footer img {
         max-height: 100%;
-    }
+   }
 }
