@@ -1,11 +1,11 @@
 footer {
     background-color: #1b357e;
     width: 100vw;
-    height: 50px;
+    height: 35px;
     padding: 10px;
     position: fixed;
     bottom: 0;
-    font-family: Poppins;
+    font-family: "Play", serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +19,7 @@ footer {
     display: inline;
     vertical-align: middle;
     color: white;
+    font-size: 20px !important;
 }
 .social-media-footer ul {
     vertical-align: middle;
@@ -60,9 +61,16 @@ footer {
        }
         */
         justify-content: space-evenly;
+        .social-media-footer p {
+            font-size: 15px !important;
+        }
    }
 }
 @media screen and (max-width: 600px) {
+    footer {
+        height: 4dvb;
+    }
+
     footer .social-media-footer ul li img {
         width: 25px;
    }

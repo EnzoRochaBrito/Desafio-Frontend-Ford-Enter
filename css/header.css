@@ -5,7 +5,7 @@ header {
     position: fixed;
     top: 0px;
     padding: 5px;
-    font-family: Poppins;
+    font-family: "Play", serif;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 header .logo-ford-header {
@@ -49,6 +49,11 @@ header .navigation-header ul li a {
 header .navigation-header ul li:hover {
     color: #1351d8;
 }
+
+header + main{
+    margin-top: 70px;
+}
+
 .selected {
     color: navy;
     text-decoration: solid;
@@ -60,9 +65,9 @@ header .navigation-header ul li:hover {
     color: navy !important;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-header + main {
+/* header + main {
     margin-top: 40px;
-}
+} */
 @media screen and (max-width: 600px) {
     header {
         display: flex;
