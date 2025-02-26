@@ -1,0 +1,56 @@
+main {
+    padding-top: 5vh;
+    font-family: "Play", 'Verdana';
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .main-form{
+    display: flex;
+}
+
+main .main-form .contact-form form > input, h2{
+    display: block;
+    margin: 5px;
+}
+
+main .main-form .contact-form form input{
+    width: 20vw;
+    height: 35px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    place-self: end;
+}
+
+main .main-form .contact-form form input[type='button']{
+    width: 13vw;
+    background-color: #1b357e;
+    color: white;
+    border: none;
+}
+
+main .main-form .contact-form form h2{
+    font-weight: 600;
+}
+
+@media screen and (orientation: portrait){
+    main .main-form{
+        display: block;
+    }
+
+    main .main-form .contact-form form input{
+        width: 70vw;
+        height: 35px;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+    }
+    main .main-form .contact-form form input[type='button']{
+        width: 50vw;
+        background-color: #1b357e;
+        color: white;
+        border: none;
+    }
+}
