@@ -36,13 +36,20 @@ main .main-form .contact-form form h2{
 }
 
 @media screen and (orientation: portrait){
+
     main .main-form{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 
+    main .main-form .contact-form form{
+        place-self: end;
+        width: 70vw;
+    }
+    
     main .main-form .contact-form form input{
         width: 70vw;
-        height: 35px;
+        height: 30px;
         border-radius: 5px;
         border-width: 1px;
         border-style: solid;
@@ -52,5 +59,14 @@ main .main-form .contact-form form h2{
         background-color: #1b357e;
         color: white;
         border: none;
+    }
+}
+
+@media screen and (max-height: 600px){
+    main .main-form .contact-form form input{
+        height: 4dvh;
+    }
+    main .main-form .contact-form form input[type='button']{
+        height: 6dvh;
     }
 }
