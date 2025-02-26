@@ -1,117 +1,138 @@
-header + main{
+
+
+header + main {
     margin-top: 60px;
 }
-
-
-.compare-area{
+.compare-area {
     text-align: center;
     height: max-content;
-    button{
-        margin-top: 1rem;
-        display: block;
-        justify-self: center;
-        border: none;
-        border-radius: 10px;
-        width: 200px;
-        height: 30px;
-        background-color: rgb(27, 53, 126);
-        color: white;
-        cursor: pointer;
-        font-size: 15px !important;
-        transition: opacity 0.2s;
-    }
-    button:hover{
-        opacity: 0.8;
-
-    }
 }
-
-main .youtube-video{
-    max-width: 100vw;
+.compare-area button {
+    margin-top: 2rem;
+    display: block;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #1b357e;
+    color: white;
+    cursor: pointer;
+    font-size: 15px !important;
+    transition: opacity 0.2s;
+}
+.compare-area button:hover {
+    opacity: 0.8;
+}
+main .youtube-video {
+    min-width: 100%;
     min-height: fit-content;
     background-color: #f6f6f6;
     text-align: center;
-    iframe{
-        height: 55vh;
-        min-width: 100%;
-    }
 }
-
-main .cars-releasing{
+main .youtube-video iframe {
+    height: 50vh;
+    min-width: 100%;
+}
+main .cars-releasing {
     margin-top: 10px;
     height: fit-content;
     width: max-content;
     display: inline-block;
-    .car{
-        margin-left: 15px;
-        min-width: max-content;
-        min-height: 1vw;
-        display: inline-block;
-        .car-image{
-            text-align: center;
-            height: 184px;
-            img{
-                max-height: 100%;
-                max-width: 100%;
-                -webkit-user-drag: none;
-            }
-        }
-        
-        
-        .car-detail{
-            display: flex;
-            justify-content: space-evenly;
-            input[type="checkbox"]{
-                width: 20px;
-                height: 20px;
-                cursor: pointer;
-            }
-
-            .to-read{
-                font-size: 20px;
-                display: inline-block;
-                width: 250px;
-                margin-right: 15px;
-                .car-text{
-                    width: 100%;
-                    color: #1351d8;
-                    font-size: 16px !important;
-                    margin-bottom: 5px;
-                    overflow: hidden;
-                    text-align: justify;
-                }
-                .car-info{
-                    overflow: hidden;
-                    text-align: justify;
-                    font-size: 16px !important;
-                }
-            }
-        }
-    }
+}
+main .cars-releasing .car {
+    margin-left: 15px;
+    min-width: max-content;
+    min-height: 1vw;
+    display: inline-block;
+}
+main .cars-releasing .car .car-image {
+    text-align: center;
+    height: 184px;
 }
 
-@media screen and (max-width: 600px){
-    header + main{
+main .cars-releasing .car .car-image img {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    transition: transform 0.1s;
+    z-index: 0;
+}
+
+main .cars-releasing .car .car-image:hover img{
+    transform: translateY(-10px);
+}
+
+main .cars-releasing .car .car-detail {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+main .cars-releasing .car .car-detail input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+main .cars-releasing .car .car-detail .info-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    transition: opacity 0.05s;
+}
+main .cars-releasing .car .car-detail .info-button:hover {
+    opacity: 0.5;
+}
+main .cars-releasing .car .car-detail .to-read {
+    z-index: 1;
+    font-size: 20px;
+    display: inline-block;
+    width: 250px;
+    margin-right: 15px;
+}
+main .cars-releasing .car .car-detail .to-read .car-text {
+    width: 100%;
+    color: #1351d8;
+    font-size: 16px !important;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-align: justify;
+}
+main .cars-releasing .car .car-detail .to-read .car-info {
+    overflow: hidden;
+    text-align: justify;
+    font-size: 16px !important;
+}
+@media screen and (max-width: 600px) {
+    header + main {
         margin-top: 40px;
-    }
-    main .youtube-video iframe{
+   }
+    main .youtube-video iframe {
         height: 40vh;
-    }
-    .car{
-        max-width: 100px;
-    }
+   }
+    .car {
+        margin-left: 0 !important;
+   }
 }
-
-@media screen and (max-width: 1024px){
-    .compare-area, .compare-area .cars-releasing{
+@media screen and (max-width: 1024px) {
+    .compare-area, .compare-area .cars-releasing {
         display: inline-block;
         width: 100vw;
-    }
-    .car{
+   }
+    .car {
         display: block;
         max-width: 10px;
-        .car-image{
-            max-height: 15rem;
-        }
-    }
+   }
+    .car .car-image {
+        max-height: 15rem;
+   }
+    main {
+       /* height: max-content;
+        */
+        margin-bottom: 100px;
+   }
 }

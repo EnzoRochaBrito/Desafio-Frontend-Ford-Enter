@@ -1,12 +1,13 @@
 header {
     background-color: white;
-    width: 100vw;
+    min-width: 100%;
     height: 5dvh;
     position: fixed;
     top: 0px;
     padding: 5px;
     font-family: "Play", serif;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 header .logo-ford-header {
     margin-left: 10px;
@@ -52,6 +53,7 @@ header .navigation-header ul li:hover {
 
 header + main{
     margin-top: 70px;
+    min-width: 100%;
 }
 
 .selected {
