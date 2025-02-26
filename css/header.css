@@ -77,9 +77,9 @@ header + main{
         justify-content: space-between;
         height: 4dvb;
    }
-    header .logo-ford-header img {
+    /* header .logo-ford-header img {
         height: 5vw;
-   }
+   } */
     header + main {
         margin-top: 40px;
    }
