@@ -1,7 +1,7 @@
 footer {
     background-color: #1b357e;
     min-width: 100%;
-    height: 35px;
+    height: 5dvh;
     padding: 10px;
     position: fixed;
     bottom: 0;
@@ -29,7 +29,7 @@ footer {
     display: inline;
 }
 .social-media-footer ul li img {
-    width: 30px;
+    width: 3dvh;
     transition: width 0.2s, padding 0.2s;
     -webkit-user-drag: none;
 }
@@ -48,6 +48,7 @@ footer {
 }
 .ford-logo-footer img {
     -webkit-user-drag: none;
+    height: 100%;
     
 }
 .ford-logo-footer:hover {
@@ -75,7 +76,7 @@ footer {
     /* footer .ford-logo-footer {
         height: 10vw;
    } */
-    footer .ford-logo-footer img {
+    /* footer .ford-logo-footer img {
         max-height: 100%;
-   }
+   } */
 }

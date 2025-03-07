@@ -1,29 +1,31 @@
 main {
-    font-family: "Play", serif;
-    width: 100vw;
-    .main-content{
-        display: flex;
-        justify-content: center;
-        .ford-ranger-image{
-            text-align: center;
-            display: block;
-    
-            img{
-                -webkit-user-drag: none; 
-                width: 100%;
-            }
-    
-            p{
-                margin-top: 1rem;
-            }
-            p a{
-                color: navy;
-                text-decoration: none;
-                vertical-align: middle;
-            }
-            p a:hover{
-                text-shadow: 0 0;
-            }
-        }
-    }
+	 font-family: "Play", serif;
+	 width: 100vw;
 }
+ main .main-content {
+	 display: flex;
+	 justify-content: center;
+}
+ main .main-content .ford-ranger-image {
+	 text-align: center;
+	 display: block;
+}
+ main .main-content .ford-ranger-image img {
+	 -webkit-user-drag: none;
+	 width: 100%;
+     transition: transform 1s;
+}
+
+ main .main-content .ford-ranger-image p {
+	 margin-top: 1rem;
+     margin-bottom: 12vh;
+}
+ main .main-content .ford-ranger-image p a {
+	 color: navy;
+	 text-decoration: none;
+	 vertical-align: middle;
+}
+ main .main-content .ford-ranger-image p a:hover {
+	 text-shadow: 0 0;
+}
+ 

@@ -9,6 +9,7 @@ header + main {
 }
 .compare-area button {
     margin-top: 2rem;
+    margin-bottom: 10vh;
     display: block;
     justify-self: center;
     border: none;
@@ -62,7 +63,7 @@ main .cars-releasing .car .car-image img {
 }
 
 main .cars-releasing .car .car-image:hover img{
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 main .cars-releasing .car .car-detail {
@@ -130,9 +131,15 @@ main .cars-releasing .car .car-detail .to-read .car-info {
     .car .car-image {
         max-height: 15rem;
    }
-    main {
-       /* height: max-content;
-        */
+
+    /* main {
         margin-bottom: 100px;
-   }
+   } */
 }
+
+/* @media screen and (orientation: portrait){
+    button{
+        background-color: red !important;
+        margin-bottom: 15vw;
+    }
+} */

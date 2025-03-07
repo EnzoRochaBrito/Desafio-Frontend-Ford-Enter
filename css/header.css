@@ -8,6 +8,7 @@ header {
     font-family: "Play", serif;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    align-items: center;
 }
 header .logo-ford-header {
     margin-left: 10px;
@@ -19,7 +20,7 @@ header .logo-ford-header a {
     vertical-align: middle;
 }
 header .logo-ford-header img {
-    height: 100%;
+    height: 80%;
     cursor: pointer;
     display: inline;
     transition: opacity 0.1s;
@@ -28,6 +29,15 @@ header .logo-ford-header img {
 header .logo-ford-header img:hover {
     opacity: 0.7;
 }
+
+header .mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 header .navigation-header {
     height: fit-content;
     min-width: max-content;
@@ -72,9 +82,6 @@ header + main{
 } */
 @media screen and (max-width: 600px) {
     header {
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
         height: 4dvb;
    }
     /* header .logo-ford-header img {
@@ -83,4 +90,11 @@ header + main{
     header + main {
         margin-top: 40px;
    }
+}
+
+@media screen and (max-width: 360px) {
+
+    header .navigation-header{
+        left: 60vw;
+    }
 }
