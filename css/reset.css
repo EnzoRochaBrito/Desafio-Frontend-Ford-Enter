@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,19 +50,19 @@ table {
 
 * {
 	font-family: "play", serif;
+	font-size: 20px !important;
 }
 
 /* fonts */
 
-@media screen and (min-width: 1080px){
+/* @media screen and (min-width: 1080px){
 	* {
-		font-size: 20px !important;
 	}
-}
+} */
 
 @media screen and (max-width: 700px){
 	*{
-		font-size: 16px !important;
+		font-size: 20px !important;
 	}
 }
 
