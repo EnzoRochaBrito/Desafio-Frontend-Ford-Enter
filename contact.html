@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact/contact.css">
+    <link rel="shortcut icon" href="img/ford-favicon.ico" type="image/x-icon">
     <title>Contato</title>
 </head>
 <body>
@@ -39,7 +40,11 @@
                     <input class="contact-text" type="text" placeholder="Email*">
                     <input class="contact-text" type="text" placeholder="CPF*">
                     <input class="contact-text" type="text" placeholder="Telefone*">
-                    <input class="contact-text" type="" placeholder="Test">
+                    <select class="contact-text" name="contact-method" id="contact-method">
+                        <option value="">Email</option>
+                        <option value="">Telefone</option>
+                        <option value="">SMS</option>
+                    </select>
                     <input type="button" value="Enviar">
                 </form>
             </div>
