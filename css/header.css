@@ -29,15 +29,6 @@ header .logo-ford-header img {
 header .logo-ford-header img:hover {
     opacity: 0.7;
 }
-
-header .mobile-menu{
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 header .navigation-header {
     height: fit-content;
     min-width: max-content;

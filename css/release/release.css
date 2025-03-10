@@ -8,7 +8,7 @@ header + main {
     height: max-content;
 }
 .compare-area button {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     margin-bottom: 10vh;
     display: block;
     justify-self: center;
@@ -50,16 +50,55 @@ main .cars-releasing .car {
 main .cars-releasing .car .car-image {
     text-align: center;
     height: 184px;
+    cursor: pointer;
 }
 
 main .cars-releasing .car .car-image img {
     max-height: 100%;
     max-width: 100%;
     position: relative;
-    cursor: pointer;
     -webkit-user-drag: none;
     transition: transform 0.1s;
-    z-index: 0;
+    z-index: -1;
+}
+
+.car-get-info{
+    z-index: 1;
+    cursor: pointer;
+}
+
+.checkbox-to-label{
+    display: none;
+}
+
+.car-info-popup{
+    display: none;
+    width: 0;
+    overflow: hidden;
+    z-index: 1;
+    border-style: solid;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    transition: width 1s;
+}
+
+.car-popup{
+    background-color: white;
+    text-align: left;
+}
+
+.car-popup, td{
+    font-size: 16px !important;
+    border: 1px solid #1b357e;
+    padding: 5px;
+}
+
+.checkbox-to-label:checked + .car-info-popup {
+    display: block;
 }
 
 main .cars-releasing .car .car-image:hover img{
@@ -82,7 +121,6 @@ main .cars-releasing .car .car-detail .info-button {
     position: absolute;
     bottom: 0;
     right: 0;
-    cursor: pointer;
     transition: opacity 0.05s;
 }
 main .cars-releasing .car .car-detail .info-button:hover {
