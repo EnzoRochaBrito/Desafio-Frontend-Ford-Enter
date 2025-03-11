@@ -19,7 +19,17 @@ main .main-form .contact-form form > input, h2, select{
     margin: 5px;
 }
 
-main .main-form .contact-form form input, select{
+.balloon{
+    resize: vertical;
+}
+
+select{
+    max-width: 20.3vw !important;
+    width: 20.3vw !important;
+}
+
+main .main-form .contact-form form input, select ,.balloon{
+    max-width: 20vw;
     width: 20vw;
     height: 35px;
     border-radius: 5px;
@@ -27,9 +37,11 @@ main .main-form .contact-form form input, select{
     border-style: solid;
     place-self: end;
     transition: box-shadow 0.1s;
+    vertical-align: middle;
 }
 
-main .main-form .contact-form form input:hover, select:hover{
+
+main .main-form .contact-form form input:hover, select:hover, .balloon:hover{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 

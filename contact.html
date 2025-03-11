@@ -40,12 +40,19 @@
                     <input class="contact-text" type="text" placeholder="Email*">
                     <input class="contact-text" type="text" placeholder="CPF*">
                     <input class="contact-text" type="text" placeholder="Telefone*">
-                    <select class="contact-text" name="contact-method" id="contact-method">
+                    <select class="contact-text" name="contact-reason" id="contact-reason">
+                        <option disabled selected value="">Motivo do Contato</option>
                         <option value="">Elogio</option>
                         <option value="">Reclamação</option>
                         <option value="">Solicitação</option>
                     </select>
-                    <textarea class="contact-text" placeholder="Escreva a sua mensagem aqui" name="" id=""></textarea>
+                    <select class="contact-text" name="contact-method" id="contact-method">
+                        <option disabled selected value="">Meio de Contato</option>
+                        <option value="">Email</option>
+                        <option value="">Telefone</option>
+                        <option value="">SMS</option>
+                    </select>
+                    <textarea class="contact-text balloon" placeholder="Escreva a sua mensagem aqui." name="" id=""></textarea>
                     <input type="button" value="Enviar">
                 </form>
             </div>
