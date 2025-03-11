@@ -12,6 +12,7 @@ main .main-form{
 
 main .main-form .car-photo img{
     -webkit-user-drag: none;
+    max-width: 450px;
 }
 
 main .main-form .contact-form form > input, h2, select{
@@ -21,7 +22,9 @@ main .main-form .contact-form form > input, h2, select{
 
 .balloon{
     resize: vertical;
+    height: 10vh;
     min-height: 10vh;
+    max-height: 30vh;
 }
 
 select{
@@ -77,10 +80,22 @@ main .main-form .contact-form form h2{
 
     main .main-form .contact-form form{
         place-self: end;
+        max-width: 70vw;
         width: 70vw;
     }
     
-    main .main-form .contact-form form input{
+    select{
+        width: 70vw !important;
+        max-width: 70vw !important;
+    }
+
+    .balloon{
+        height: 10vh;
+        max-height: 20vh;
+    }
+    
+    main .main-form .contact-form form input, .balloon{
+        max-width: 70vw;
         width: 70vw;
         height: 30px;
         border-radius: 5px;
