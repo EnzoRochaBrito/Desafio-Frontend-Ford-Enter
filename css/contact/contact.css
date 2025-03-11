@@ -21,6 +21,7 @@ main .main-form .contact-form form > input, h2, select{
 
 .balloon{
     resize: vertical;
+    min-height: 10vh;
 }
 
 select{
