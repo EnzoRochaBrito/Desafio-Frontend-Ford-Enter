@@ -42,6 +42,7 @@ main .cars-releasing {
     display: inline-block;
 }
 main .cars-releasing .car {
+    position: relative;
     margin-left: 15px;
     min-width: max-content;
     min-height: 1vw;
@@ -181,3 +182,91 @@ main .cars-releasing .car .car-detail .to-read .car-info {
         margin-bottom: 15vw;
     }
 } */
+
+.colors {
+    z-index: 10;
+    top: 10%;
+    right: -2%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 3%;
+    height: 70%;
+    gap: 3%;
+    label {
+        width: 0.8rem;
+        height: 0.8rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #red {
+        background-color: #9b3939;
+    }
+    #white {
+        background-color: #ffffff;
+    }
+    #black {
+        background-color: #000000;
+    }
+    #blue {
+        background-color: #1b357e;
+    }
+}
+
+.change-color-radio-button{
+    display: none;
+    width: 100px;
+}
+
+/* Primeira Linha de Carro */
+
+#xl20-white-radio:checked + img {
+    display: block;
+}
+
+#xl20-red-radio:checked + img {
+    display: block;
+}
+
+/* Segunda Linha de Carro */
+
+#xls-white-radio:checked + img {
+    display: block;
+}
+
+#xls-red-radio:checked + img {
+    display: block;
+}
+
+#xls-blue-radio:checked + img {
+    display: block;
+}
+#xls-black-radio:checked + img {
+    display: block;
+}
+
+/* Terceira linha de carro */
+
+#storm-white-radio:checked + img{
+    display: block;
+}
+
+#storm-red-radio:checked + img{
+    display: block;
+}
+
+#storm-blue-radio:checked + img{
+    display: block;
+}
+
+#storm-black-radio:checked + img{
+    display: block;
+}
+
+
+.carro-foto{
+    display: none;
+    width: 320px;
+    height: 184px;
+}
