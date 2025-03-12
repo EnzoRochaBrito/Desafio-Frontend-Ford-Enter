@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 main {
 	 font-family: "Play", serif;
 	 width: 100vw;
@@ -18,7 +20,8 @@ main {
 }
 
  main .main-content .ford-ranger-image p {
-	 margin-top: 1rem;
+	color: rgb(31, 31, 31);
+	margin-top: 1rem;
 }
  main .main-content .ford-ranger-image p a {
 	 color: navy;
@@ -27,8 +30,11 @@ main {
 }
 
 main .ford-ranger-text{
+	font-family: "Encode Sans Expanded", sans-serif;
+	/* font-size: 20px !important; */
+	color: black !important;
 	max-width: 70vw;
-	width: 70vw;
+	width: 60vw;
 	justify-self: center;
 	text-align: justify;
 	/* margin-top: 7vh; */
