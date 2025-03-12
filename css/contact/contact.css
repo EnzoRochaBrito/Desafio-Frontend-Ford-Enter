@@ -59,7 +59,7 @@ main .main-form .contact-form form input[type='button']{
 }
 
 main .main-form .contact-form form input[type='button']:hover{
-    box-shadow: 0 0 5px blue;
+    opacity: 0.8;
 }
 
 main .main-form .contact-form form h2{

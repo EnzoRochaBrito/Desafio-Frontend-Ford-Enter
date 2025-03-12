@@ -166,6 +166,8 @@ main .cars-releasing .car .car-detail .to-read .car-info {
     .car {
         display: block;
         max-width: 10px;
+        /* margin: 30px; */
+        border-radius: 10px;
    }
     .car .car-image {
         max-height: 15rem;
@@ -189,17 +191,27 @@ main .cars-releasing .car .car-detail .to-read .car-info {
     right: -2%;
     position: absolute;
     display: flex;
-    flex-direction: column;
-    width: 3%;
-    height: 70%;
-    gap: 3%;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    gap: 1%;
+    z-index: 1;
     label {
-        width: 0.8rem;
-        height: 0.8rem;
+        display: inline;
+        width: 15px;
+        height: 15px;
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.1s;
     }
+
+    label:hover{
+        opacity: 1;
+    }
+
     #red {
         background-color: #9b3939;
     }
@@ -269,4 +281,5 @@ main .cars-releasing .car .car-detail .to-read .car-info {
     display: none;
     width: 320px;
     height: 184px;
+    object-fit: contain;
 }

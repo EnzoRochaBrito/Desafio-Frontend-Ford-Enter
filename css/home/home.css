@@ -7,19 +7,18 @@ main {
 	 justify-content: center;
 }
  main .main-content .ford-ranger-image {
-	height: 50vh;
-	 text-align: center;
-	 display: block;
+	width: auto;
+	text-align: center;
+	display: block;
 }
  main .main-content .ford-ranger-image img {
 	 -webkit-user-drag: none;
-	 height: 100%;
+	 width: 70vw;
      transition: transform 1s;
 }
 
  main .main-content .ford-ranger-image p {
 	 margin-top: 1rem;
-     margin-bottom: 12vh;
 }
  main .main-content .ford-ranger-image p a {
 	 color: navy;
@@ -32,7 +31,7 @@ main .ford-ranger-text{
 	width: 70vw;
 	justify-self: center;
 	text-align: justify;
-	margin-top: 7vh;
+	/* margin-top: 7vh; */
 	position: relative;
 }
 
@@ -46,4 +45,7 @@ main .ford-ranger-text{
 		width: 90vw;
 	}
 	
+	main .main-content .ford-ranger-image img{
+		width: 100vw;
+	}
 }
