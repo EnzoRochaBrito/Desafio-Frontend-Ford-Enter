@@ -33,24 +33,18 @@
                 <img src="img/carros/xls 2.2 diesel.jpg" alt="">
             </div>
             <div class="contact-form">
-                <form action="" method="post">
+                <form action="" method="get">
                     <h2>Sobre Você</h2>
-                    <input class="contact-text" type="text" placeholder="Nome*">
-                    <input class="contact-text" type="text" placeholder="Sobrenome*">
-                    <input class="contact-text" type="text" placeholder="Email*">
-                    <input class="contact-text" type="text" placeholder="CPF*">
-                    <input class="contact-text" type="text" placeholder="Telefone*">
-                    <select class="contact-text" name="contact-reason" id="contact-reason">
+                    <input class="contact-text" type="text" placeholder="Nome*" required>
+                    <input class="contact-text" type="text" placeholder="Sobrenome*" required>
+                    <input class="contact-text" type="text" placeholder="Email*" required>
+                    <input class="contact-text" type="text" placeholder="CPF*" required>
+                    <input class="contact-text" type="text" placeholder="Telefone*" required>
+                    <select class="contact-text" name="contact-reason" id="contact-reason" required>
                         <option disabled selected value="">Motivo do Contato</option>
                         <option value="">Elogio</option>
                         <option value="">Reclamação</option>
                         <option value="">Solicitação</option>
-                    </select>
-                    <select class="contact-text" name="contact-method" id="contact-method">
-                        <option disabled selected value="">Meio de Contato</option>
-                        <option value="">Email</option>
-                        <option value="">Telefone</option>
-                        <option value="">SMS</option>
                     </select>
                     <textarea class="contact-text balloon" placeholder="Escreva a sua mensagem aqui." name="" id=""></textarea>
                     <input type="button" value="Enviar">
